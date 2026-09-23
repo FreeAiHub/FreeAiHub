@@ -22,9 +22,11 @@ ship it, and count what it costs and what it saves.
 ## What I'm building now
 
 **A personal AI operations system.** One laptop, no cloud beyond model calls:
-an orchestrator that takes a request, a separate executor model that does the
-work, speech in and out, memory in Markdown, and a runner that sends the same
-task to several models and records quality, latency and cost per run.
+planning separated from execution as a design, speech in and out, memory in
+Markdown, and a runner that sends the same task to several models and records
+quality, latency and cost per run. The separation is the design, not the current
+state — today one fast model fills both roles, and saying so is cheaper than
+being asked about it.
 
 I would rather show its real state than a polished claim, because the state is
 the interesting part. **Working today:** the executor, speech synthesis, live
@@ -57,10 +59,10 @@ generated component library around one unfinished screen. Listing them here
 would make this table longer and less true. They are where they are; they are
 not what I would show you first.
 
-A note on that last row, because it is the honest version. I built the documentation
-for `talentflow-agent` before the code existed, which is a mistake I would rather
-write down than hide: the repository spent months describing a product that did not
-run. It runs now. The README is the part still catching up.
+A note on the first row, because it is the honest version. I built the
+documentation for `talentflow-agent` before the code existed, which is a mistake
+I would rather write down than hide: the repository spent months describing a
+product that did not run. It runs now, with the test suite in the repository.
 
 ## Tools I actually use
 
