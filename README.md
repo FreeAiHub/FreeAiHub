@@ -42,7 +42,7 @@ architecture for publication, and I am happy to walk through it live.
 | [market-research-map](https://github.com/FreeAiHub/market-research-map) | Dashboard for market research: niches, geography, affiliate offers | TypeScript |
 | [binance-delisting-monitor](https://github.com/FreeAiHub/binance-delisting-monitor) | Watches exchange delistings, classifies the events and structures them as training data | Python |
 | [devops-optimizer](https://github.com/FreeAiHub/devops-optimizer) | Toolkit for Git repository cleanup and disk space recovery | Python, MIT |
-| [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | Recruiting automation: parses Djinni vacancies, de-duplicates them, scores the fit, drafts a reply and sends a Telegram digest. 270 tests | Python, FastAPI, SQLAlchemy, PostgreSQL |
+| [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | Recruiting automation: parses Djinni vacancies, de-duplicates them, scores the fit, drafts a reply and sends a Telegram digest. The test suite is in the repository | Python, FastAPI, SQLAlchemy, PostgreSQL |
 
 A note on that last row, because it is the honest version. I built the documentation
 for `talentflow-agent` before the code existed, which is a mistake I would rather
