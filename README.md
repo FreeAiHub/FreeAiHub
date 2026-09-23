@@ -21,17 +21,23 @@ ship it, and count what it costs and what it saves.
 
 ## What I'm building now
 
-**A personal AI operations system.** A working local stack on macOS: text and voice
-entry points, an orchestrator agent, background services for content publishing and
-reporting, memory in Markdown, and a runner that sends the same task to several models
-and records quality, latency and cost per run. Python services on localhost, SQLite,
-MCP servers for browser and repository access.
+**A personal AI operations system.** One laptop, no cloud beyond model calls:
+an orchestrator that takes a request, a separate executor model that does the
+work, speech in and out, memory in Markdown, and a runner that sends the same
+task to several models and records quality, latency and cost per run.
 
-Every component runs on one laptop. The lesson it taught me is in daily use: cheap
-models for drafts, paid models for decisions.
+I would rather show its real state than a polished claim, because the state is
+the interesting part. **Working today:** the executor, speech synthesis, live
+voice conversation, Telegram as a channel, and the model-comparison runner —
+that one produced a written report on its first run. **Not working yet:** the
+orchestrator is several contours that have never been joined into one path,
+notes still get lost between chats, and the dashboard has been down for a while.
 
-The code is private while I clean it up — I am preparing a sanitised version of the
-architecture for publication, and I am happy to walk through it live.
+Building it taught me the thing I now apply everywhere: cheap models for drafts,
+paid models for decisions.
+
+The code is private while I clean it up — I am preparing a sanitised version of
+the architecture for publication, and I am happy to walk through it live.
 
 ## Repositories worth opening
 
