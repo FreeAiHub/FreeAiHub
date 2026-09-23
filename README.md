@@ -43,7 +43,7 @@ the architecture for publication, and I am happy to walk through it live.
 
 | Repository | What it is | Stack |
 |---|---|---|
-| [ai-lab](https://github.com/FreeAiHub/ai-lab) | Self-hosted stacks for agents, RAG and automation — Flowise, Dify, n8n, Open WebUI, Qdrant, each in Docker | Docker Compose |
+| [ai-lab](https://github.com/FreeAiHub/ai-lab) | Self-hosted stacks for agents, RAG and automation — Flowise, n8n, Open WebUI, Qdrant and a combined stack, each in Docker | Docker Compose |
 | [bookas](https://github.com/FreeAiHub/bookas) | Product image synchronisation for a WooCommerce bookstore — matches and pushes images by ISBN | TypeScript, WooCommerce API |
 | [market-research-map](https://github.com/FreeAiHub/market-research-map) | Dashboard for market research: niches, geography, affiliate offers | TypeScript |
 | [binance-delisting-monitor](https://github.com/FreeAiHub/binance-delisting-monitor) | Watches exchange delistings, classifies the events and structures them as training data | Python |
