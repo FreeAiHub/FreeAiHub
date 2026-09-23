@@ -42,11 +42,12 @@ architecture for publication, and I am happy to walk through it live.
 | [market-research-map](https://github.com/FreeAiHub/market-research-map) | Dashboard for market research: niches, geography, affiliate offers | TypeScript |
 | [binance-delisting-monitor](https://github.com/FreeAiHub/binance-delisting-monitor) | Watches exchange delistings, classifies the events and structures them as training data | Python |
 | [devops-optimizer](https://github.com/FreeAiHub/devops-optimizer) | Toolkit for Git repository cleanup and disk space recovery | Python, MIT |
-| [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | Recruiting automation: parse vacancies, score fit, draft a response. **Design stage** — the concept and data model are written up, the code is what I am building now | Python, FastAPI |
+| [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | Recruiting automation: parses Djinni vacancies, de-duplicates them, scores the fit, drafts a reply and sends a Telegram digest. 270 tests | Python, FastAPI, SQLAlchemy, PostgreSQL |
 
-A note on that last row, because it is the honest version: I wrote the documentation
-for `talentflow-agent` before writing the code. The repository labels its own status
-rather than implying a finished product.
+A note on that last row, because it is the honest version. I built the documentation
+for `talentflow-agent` before the code existed, which is a mistake I would rather
+write down than hide: the repository spent months describing a product that did not
+run. It runs now. The README is the part still catching up.
 
 ## Tools I actually use
 
