@@ -41,14 +41,21 @@ the architecture for publication, and I am happy to walk through it live.
 
 ## Repositories worth opening
 
+Four that run, and a note about the rest.
+
 | Repository | What it is | Stack |
 |---|---|---|
-| [ai-lab](https://github.com/FreeAiHub/ai-lab) | Self-hosted stacks for agents, RAG and automation — Flowise, n8n, Open WebUI, Qdrant and a combined stack, each in Docker | Docker Compose |
-| [bookas](https://github.com/FreeAiHub/bookas) | Product image synchronisation for a WooCommerce bookstore — matches and pushes images by ISBN | TypeScript, WooCommerce API |
-| [market-research-map](https://github.com/FreeAiHub/market-research-map) | Dashboard for market research: niches, geography, affiliate offers | TypeScript |
-| [binance-delisting-monitor](https://github.com/FreeAiHub/binance-delisting-monitor) | Watches exchange delistings, classifies the events and structures them as training data | Python |
-| [devops-optimizer](https://github.com/FreeAiHub/devops-optimizer) | Toolkit for Git repository cleanup and disk space recovery | Python, MIT |
 | [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | Recruiting automation: parses Djinni vacancies, de-duplicates them, scores the fit, drafts a reply and sends a Telegram digest. The test suite is in the repository | Python, FastAPI, SQLAlchemy, PostgreSQL |
+| [bookas](https://github.com/FreeAiHub/bookas) | Product image synchronisation for a WooCommerce bookstore, written for a shop that uses it — matches and pushes images by ISBN | Python, WooCommerce API |
+| [ai-lab](https://github.com/FreeAiHub/ai-lab) | Self-hosted stacks for agents, RAG and automation — Flowise, n8n, Open WebUI, Qdrant and a combined stack, each in Docker | Docker Compose |
+| [devops-optimizer](https://github.com/FreeAiHub/devops-optimizer) | One script that measures a Git working tree and reports what could be reclaimed | Python, MIT |
+
+**What I left out, and why.** The profile has other repositories that are
+scaffolding rather than software: `binance-delisting-monitor` is an entry point
+that logs "ready for implementation" and loops, `market-research-map` is a
+generated component library around one unfinished screen. Listing them here
+would make this table longer and less true. They are where they are; they are
+not what I would show you first.
 
 A note on that last row, because it is the honest version. I built the documentation
 for `talentflow-agent` before the code existed, which is a mistake I would rather
