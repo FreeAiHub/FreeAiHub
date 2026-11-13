@@ -2,89 +2,69 @@
 
 # Alexandre
 
-**AI automation & operations.** I take a business task, build the automation
-around it, and stay responsible for the result.
+**AI automation & operations — I turn a business process into a working, measured system.**
 
-Portimão, Portugal · [LinkedIn](https://www.linkedin.com/in/alexandre-crowhub/) · [X](https://x.com/AlexandreCrowAI)
+Founder, [CrowHub Studio](https://github.com/FreeAiHub) · Portimão, Portugal · EU work authorization
+
+[LinkedIn](https://www.linkedin.com/in/alexandre-crowhub/) · [X](https://x.com/AlexandreCrowAI)
 
 </div>
 
 ---
 
-Ten years in digital business — performance marketing, affiliate, B2B partnerships,
-budgets, a team of three developers. The last two years: building and running
-LLM-based automation on my own machine.
+Ten years in digital business — performance marketing, affiliate and B2B partnerships,
+budgets above $300K, a team of three developers. For the last two years I have been
+designing and operating LLM-based automation end to end: choosing the model, wiring it
+into the process, shipping it, and tracking what it costs and what it saves.
 
-I am not a model researcher, and I do not claim to be one. What I bring is the
-operator's side of AI: pick the tool that fits, wire it into the business process,
-ship it, and count what it costs and what it saves.
+My focus is the operator's side of AI, not model research.
 
-## What I'm building now
+## Now: CrowHub Studio
 
-**A personal AI operations system.** One laptop, no cloud beyond model calls:
-planning separated from execution as a design, speech in and out, memory in
-Markdown, and a runner that sends the same task to several models and records
-quality, latency and cost per run. The separation is the design, not the current
-state — today one fast model fills both roles, and saying so is cheaper than
-being asked about it.
+An AI-run web studio for small businesses in Portugal. The pipeline is split into
+agent roles with explicit acceptance criteria at every stage:
 
-I would rather show its real state than a polished claim, because the state is
-the interesting part. **Working today:** the executor, speech synthesis, live
-voice conversation, Telegram as a channel, and the model-comparison runner —
-that one produced a written report on its first run. **Not working yet:** the
-orchestrator is several contours that have never been joined into one path,
-notes still get lost between chats, and the dashboard has been down for a while.
+`Scout → Outreach → Research (brief.json) → Build → QA → Preview → Payment → Upsell`
 
-Building it taught me the thing I now apply everywhere: cheap models for drafts,
-paid models for decisions.
+- **Site generator** — a validated JSON brief becomes a 2–5 page static site (PT/EN,
+  GDPR, WhatsApp, contact form), deployed to Cloudflare Pages.
+- **Automated QA gate** — SEO, accessibility and weight checks plus Lighthouse; a site
+  that fails does not reach the client. Reference build: 100 / 100 / 100 / 100.
+- **Lead generation** — Google Maps, Instagram and Telegram scouts with scoring and
+  de-duplication; contacts live in the CRM, never in git.
+- **Unit economics as a constraint** — ≤ $5 in model and API cost and ≤ 2 hours from
+  brief to preview, logged per site.
 
-The code is private while I clean it up — I am preparing a sanitised version of
-the architecture for publication, and I am happy to walk through it live.
+## Also built
 
-## Repositories worth opening
-
-Four that run, and a note about the rest.
-
-| Repository | What it is | Stack |
+| Repository | What it does | Stack |
 |---|---|---|
-| [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | Recruiting automation: parses Djinni vacancies, de-duplicates them, scores the fit, drafts a reply and sends a Telegram digest. The test suite is in the repository | Python, FastAPI, SQLAlchemy, PostgreSQL |
-| [bookas](https://github.com/FreeAiHub/bookas) | Product image synchronisation for a WooCommerce bookstore, written for a shop that uses it — matches and pushes images by ISBN | Python, WooCommerce API |
-| [ai-lab](https://github.com/FreeAiHub/ai-lab) | Self-hosted stacks for agents, RAG and automation — Flowise, n8n, Open WebUI, Qdrant and a combined stack, each in Docker | Docker Compose |
-| [devops-optimizer](https://github.com/FreeAiHub/devops-optimizer) | One script that measures a Git working tree and reports what could be reclaimed | Python, MIT |
+| [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | Recruiting automation: parses vacancies, de-duplicates, scores fit, drafts replies, sends a Telegram digest. Tested | Python, FastAPI, SQLAlchemy, PostgreSQL |
+| [bookas](https://github.com/FreeAiHub/bookas) | Product-image sync by ISBN for a WooCommerce bookstore in production use | Python, WooCommerce API |
+| [ai-lab](https://github.com/FreeAiHub/ai-lab) | Self-hosted stacks for agents, RAG and automation (Flowise, n8n, Open WebUI, Qdrant) | Docker Compose |
+| [devops-optimizer](https://github.com/FreeAiHub/devops-optimizer) | Measures a Git working tree and reports reclaimable space | Python |
 
-**What I left out, and why.** The profile has other repositories that are
-scaffolding rather than software: `binance-delisting-monitor` is an entry point
-that logs "ready for implementation" and loops, `market-research-map` is a
-generated component library around one unfinished screen. Listing them here
-would make this table longer and less true. They are where they are; they are
-not what I would show you first.
+**Personal AI operations system** (private, architecture write-up in progress) — planner
+and executor separation, voice in/out, Markdown memory, and a runner that sends one task
+to several models and records quality, latency and cost per run.
 
-A note on the first row, because it is the honest version. I built the
-documentation for `talentflow-agent` before the code existed, which is a mistake
-I would rather write down than hide: the repository spent months describing a
-product that did not run. It runs now, with the test suite in the repository.
+## Toolkit
 
-## Tools I actually use
-
-`Python` (read and fixed with AI coding agents — not written from scratch by hand) ·
-`Docker` (running stacks, not orchestrating clusters) · `SQLite` · `REST APIs and
-webhooks` · `MCP servers` · `Telegram bots` · `Flowise / Dify / n8n` · `Git` ·
-`SQL` · `Google Ads / Meta / Yandex` · `GA4, cohort and funnel analytics`
+`Claude Code & agent workflows` · `MCP servers` · `Python` · `REST APIs & webhooks` ·
+`SQLite / PostgreSQL` · `Docker` · `Cloudflare Pages` · `Telegram bots` ·
+`n8n / Flowise / Dify` · `Google Ads / Meta` · `GA4, cohort & funnel analytics`
 
 ## How I work
 
-- **Evidence over adjectives.** A claim without a file, a log or a number behind it
-  does not belong in a README.
-- **A demo that runs beats a feature list that does not.**
-- **Write down what broke.** The failure is usually the useful part.
-- **Written task intake.** English in writing is stronger for me than English on a
-  call, and it leaves a trail both sides can check.
+- **Evidence over adjectives** — every claim has a file, a log or a number behind it.
+- **Ship a running demo** before a feature list.
+- **Budgets and stop-conditions** built in: cost, time and quality limits per run.
+- **Written intake and written post-mortems** — both sides can check the trail.
 
 <!-- STATS:START -->
 <!-- STATS:END -->
 
 ---
 
-**Available for automation work and consulting** — AI integration, workflow
-automation, or rescuing something that stopped working.
-Reach me on [LinkedIn](https://www.linkedin.com/in/alexandre-crowhub/).
+**Open to:** AI integration, workflow automation, and rescuing automations that stopped
+working. Best reached on [LinkedIn](https://www.linkedin.com/in/alexandre-crowhub/).
