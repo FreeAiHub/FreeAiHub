@@ -1,0 +1,44 @@
+name: readme-check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --exclude 'linkedin\.com'
+            --exclude '(x|twitter)\.com'
+            README.md
+          fail: true
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: README.md
+
+  stats-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Featured repositories resolve and the STATS block renders
+        run: python scripts/update_stats.py && git diff --stat
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
