@@ -86,7 +86,7 @@ webhooks` · `MCP servers` · `Telegram bots` · `Flowise / Dify / n8n` · `Git`
 | Repository | Last push | Latest CI run | Languages |
 |---|---|---|---|
 | [talentflow-agent](https://github.com/FreeAiHub/talentflow-agent) | 2026-11-07 | [success](https://github.com/FreeAiHub/talentflow-agent/actions/runs/36197536170) | Python, Shell, Dockerfile |
-| [bookas](https://github.com/FreeAiHub/bookas) | 2026-10-04 | [success](https://github.com/FreeAiHub/bookas/actions/runs/45665205736) | TypeScript, Python, Shell |
+| [bookas](https://github.com/FreeAiHub/bookas) | 2026-10-04 | [success](https://github.com/FreeAiHub/bookas/actions/runs/45910751647) | TypeScript, Python, Shell |
 | [ai-lab](https://github.com/FreeAiHub/ai-lab) | 2026-11-26 | [success](https://github.com/FreeAiHub/ai-lab/actions/runs/45792579039) | Python |
 | [devops-optimizer](https://github.com/FreeAiHub/devops-optimizer) | 2026-09-23 | no CI | Python |
 
